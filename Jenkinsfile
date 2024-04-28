@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone repository') {
             steps {
-                git 'https://github.com/mridshri/spring-petclinic.git'
+                git url: 'https://github.com/mridshri/spring-petclinic.git', branch: 'main'
             }
         }
         
